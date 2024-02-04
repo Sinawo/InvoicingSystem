@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Edit Lead</h2>
+<div mat-dialog-content>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="First Name" [(ngModel)]="lead.FirstName">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Last Name" [(ngModel)]="lead.LastName">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Email" [(ngModel)]="lead.email">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Contact Number" [(ngModel)]="lead.ContactNumber">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onSaveClick()">Save</button>
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+</div>

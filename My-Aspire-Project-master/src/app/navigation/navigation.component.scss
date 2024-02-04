@@ -1,0 +1,74 @@
+mat-toolbar {
+    background: #004a9f;
+    color: white;
+  }
+
+  
+
+
+  //    --------------------------------------------images ---------------------
+  .search-input {
+     /* Allow the search input to expand and take up remaining space */
+    margin: 0 auto; /* Center the search input horizontally */
+    width: 30%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 4px;
+    border-color: #ccc;
+    display: inline-block;
+  
+  }
+  .mat-form-field {
+    background-color: white; /* Set the background color to white */
+    border: 5px solid #afa6a6; /* Set the border color and thickness */
+    border-radius: 8px; /* Add rounded corners to the input field */
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Center-align text within each column */
+    max-width: 30%; /* Allow the input field to adjust its width based on content */
+    position: absolute; /* Set a maximum width to prevent it from becoming too wide */
+    margin-right: 35%;
+    margin-left: 35%; /* Add some spacing to the right of the input field */
+  }
+  /* CSS for the "Log In" button */
+  .login-button {
+    margin-left: auto; /* Push the button to the right */
+  }
+  
+  mat-sidenav {
+    margin: 16px;
+    width: 200px;
+    border-right: none;
+    background: #143e6e;
+    color: white;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: left;
+  }
+  
+  
+  mat-sidenav-container {
+    height: calc(100vh - 65px);
+  }
+  .fa {
+    color: white;
+  }
+  .menu-button {
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    font-size:  0.8rem;
+  
+    mat-icon {
+      margin-right: 5px;
+   
+    }
+  }
+  
+  
+  mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }

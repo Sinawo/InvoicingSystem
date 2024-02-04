@@ -1,0 +1,221 @@
+
+<section id ="menu">
+ 
+      <div class="items">
+          <ul>
+              <li><a routerLink="/home"><i class="fa-solid fa-home"></i> Home</a></li>
+              
+              <li><a href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+          
+              <li>
+                  <a routerLink="/dashboard" (click)="navigateToDashboard()">
+                      <i class="fa-solid fa-tachometer-alt"></i> Dashboard
+                  </a>
+              </li>
+             
+      
+              <li>
+                  <a>
+                      <i class="fa-solid fa-handshake"></i> Deal
+                  </a>
+              </li>
+          
+              <li>
+                  <a >
+                      <i class="fa-solid fa-file-alt"></i> Quote
+                  </a>
+              </li>
+          
+              <li>
+                  <a routerLink="/invoice" (click)="navigateToInvoicePage()">
+                      <i class="fa-solid fa-file-invoice"></i> Invoice
+                  </a>
+              </li>
+          
+              <li>
+                  <a routerLink="/settings" (click)="navigateToSettingsPage()">
+                      <i class="fa-solid fa-cogs"></i> Settings
+                  </a>
+              </li>
+          
+              <li>
+                  <i (click)="openDialog()"class="fa-solid fa-sign-out-alt"></i> Logout 
+      
+              </li>
+
+          </ul>
+      </div>
+</section>
+
+<div class="plans-container">
+    <h2>Plans to support you and your business</h2>
+    <p>START YOUR 30-DAY FREE TRIAL</p>
+    <p>You can cancel or upgrade at any time. No long-term contracts, commitments, or hidden fees.</p>
+  
+    <!-- First Div -->
+    <div class="plan-card">
+      <div class="plan-header">
+        <h3>Start-up</h3>
+     
+        <p>R200 incl. VAT per month</p>
+      </div>
+      <div class="plan-description">
+        <p>Ideal for sole traders, freelancers, and micro businesses.</p>
+        <ul>
+          <li>Create invoices in seconds</li>
+          <li>Track what you're owed</li>
+          <li>Take care of bookkeeping</li>
+          <li>Work from anywhere</li>
+          <li>Get started quickly and easily</li>
+          <li>Supports 1 user</li>
+        </ul>
+      </div>
+      <div class="plan-actions">
+        <button class="start-trial" (click)="scrollToFormSection()" >Start my free trial</button>
+        <button class="buy-now">Buy now</button>
+      </div>
+    </div>
+  
+    <!-- Second Div -->
+    <div class="plan-card">
+      <div class="plan-header">
+        <h3>Standard</h3>
+        
+        <p>2 users</p>
+        <p>R370 incl. VAT per month</p>
+      </div>
+      <div class="plan-description">
+        <p>Ideal for sole traders, freelancers, and growing businesses.</p>
+        <p>Supports all features of Accounting Start plus optional add-ons:</p>
+        <ul>
+          <li>Add up to 5 users</li>
+          <li>Calculate VAT returns</li>
+          <li>Our base package includes 2 Users and 1 Company</li>
+          <!-- Add more optional add-ons here -->
+        </ul>
+      </div>
+      <div class="plan-actions">
+        <button class="start-trial" (click)="scrollToFormSection()">Start my free trial</button>
+        <button class="buy-now">Buy now</button>
+      </div>
+    </div>
+  
+    <!-- Third Div -->
+    <div class="plan-card">
+      <div class="plan-header">
+        <h3>Accounting Standard PLUS Payroll Bundle</h3>
+        <p>R4,150 incl. VAT per month</p>
+        
+      </div>
+      <div class="plan-description">
+        <p>Enjoy all the standard features of Accounting with the additional benefits of Payroll (for start-ups and small businesses).</p>
+        <p>Add unlimited companies and users*</p>
+        <ul>
+          <li>Run monthly, fortnightly and weekly pay cycles</li>
+          <li>Get pre-defined legislative and payroll reports</li>
+          <li>Get pre-defined legislative and payroll reports</li>
+          <li>Email payslips Provide UIF declaration </li> 
+          <li>Take care of leave management  </li>
+          <li>Make ACB payments </li>  
+          <li>Get real-time calculations  </li>
+          <li> Add additional companies for R4,140/year</li> 
+          <li>Add additional users for R780/year </li>
+          <li> Time Tracking included on Option 3 </li>
+          <li> Multi Currency included on Option 3</li>
+          <li> Storage (1GB) for R180/year </li> 
+          <!-- Add more Payroll features here -->
+        </ul>
+      </div>
+      <div class="plan-actions">
+        <button class="start-trial" (click)="scrollToFormSection()">Start my free trial</button>
+        <button class="buy-now">Buy now</button>
+      </div>
+      <div class="plan-actions">
+        <p>*Only applicable to Payroll.</p>
+      </div>
+    </div>
+  </div>
+
+<section id="formSection" >
+  <div class="formSection">
+    <form id="freeTrialForm" action="your_server_endpoint.php" method="post">
+        <div class="form-group">
+            <h3 class="form-header" style="z-index: 1;">World-class Easy Cloud Accounting</h3>
+        </div>
+        <div class="form-group">
+            <h4 style="z-index: 1;">Complete the form below to start your free trial.</h4>
+            <h5 style="z-index: 1;">Are you a student? <a href="https://training.accounting.sageone.co.za/Signup/Default.aspx">Click here</a> to sign up for the educational version.</h5>
+        </div>
+        <div class="form-group">
+            <label for="firstName" aria-label="Name" class="control-label">Name</label>
+            <input id="firstName" aria-label="Name" name="firstName" class="form-control" type="text" value="" maxlength="255" placeholder="" required>
+            <span class="field-validation-valid"></span>
+        </div>
+        <div class="form-group">
+            <label for="lastName" aria-label="Surname" class="control-label">Surname</label>
+            <input id="lastName" aria-label="Surname" name="lastName" class="form-control" type="text" value="" maxlength="255" placeholder="" required>
+            <span class="field-validation-valid"></span>
+        </div>
+        <div class="form-group">
+            <label for="company" aria-label="Business Name" class="control-label">Business Name</label>
+            <input id="company" aria-label="Business Name" name="company" class="form-control" type="text" value="" maxlength="255" placeholder="" required>
+            <span class="field-validation-valid"></span>
+        </div>
+        <div class="form-group">
+            <label for="emailAddress" class="control-label">Valid E-mail Address</label>
+            <input id="emailAddress" name="emailAddress" class="form-control" type="email" value="" maxlength="255" placeholder="" required>
+            <span class="field-validation-valid"></span>
+        </div>
+        <div class="form-group">
+            <label for="country" class="control-label">Country</label>
+            <select id="country" name="country" class="form-control" required>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <!-- Add other country options here -->
+            </select>
+            <span class="field-validation-valid"></span>
+        </div>
+        <div class="form-group">
+            <label for="product" class="control-label">Product</label>
+            <select id="product" name="product" class="form-control" required>
+                <option value="Select the product you want">Select the product you want</option>
+                <!-- Add other product options here -->
+            </select>
+            <span class="field-validation-valid"></span>
+        </div>
+        <div class="form-group">
+            <label for="currentProduct">What product do you currently use?</label>
+            <select id="currentProduct" name="currentProduct" class="form-control" required>
+                <option value="Please select">Please select</option>
+                <!-- Add other current product options here -->
+            </select>
+            <span class="field-validation-valid"></span>
+        </div>
+        <div class="form-group">
+            <label for="referralCode" aria-label="Referral Code (optional)" class="control-label">Referral Code (optional)</label>
+            <input id="referralCode" aria-label="Referral Code (optional)" name="referralCode" class="form-control" type="text" value="" maxlength="255" placeholder="">
+            <span class="field-validation-valid"></span>
+        </div>
+        <div class="form-group">
+            <label for="phone" aria-label="Cell Number (inc. country code e.g +27) to send OTP" class="control-label">Cell Number (inc. country code e.g +27) to send OTP</label>
+            <input id="phone" aria-label="Cell Number (inc. country code e.g +27) to send OTP" name="phone" class="form-control otp-telephone" type="tel" value="" maxlength="255" placeholder="+27119785313" required>
+            <span class="field-validation-valid"></span>
+        </div>
+        <div class="accounting-form-otp-submit-section form-group">
+            <input type="button" value="Click here to verify your Phone" class="score-button button--small-biz button-no-padding otp-button" onclick="sendOTP()">
+        </div>
+        <div class="form-group">
+           <!--<span class="accounting-form-otp-sent hidden">A OTP (One Time Passcode) has been sent to {{Phone}}. Please enter the OTP in the field below to verify your phone.</span> --> 
+            <span class="accounting-form-resend-msg hidden">Resend OTP</span>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function sendOTP() {
+            // Add your OTP sending logic here
+            // This function should handle sending an OTP to the provided phone number
+        }
+    </script>
+</div>
+</section>
+  
